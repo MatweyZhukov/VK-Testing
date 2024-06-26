@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 100px;
+  background: gray;
+
+  & > h1 {
+    color: white;
+  }
+}

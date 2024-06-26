@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 100px;
+  gap: 50px;
+  background: gray;
+
+  & > h1 {
+    color: white;
+  }
+
+  .header-filter {
+    display: flex;
+    gap: 30px;
+
+    button {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #0073e6;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+
+      &:hover {
+        background-color: #005bb5;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        background-color: #004494;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(0);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.5);
+      }
+    }
+  }
+
+  .update {
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+
+.update {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0073e6;
+  background-color: #fff;
+  border: 2px solid #0073e6;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s, color 0.3s,
+    border-color 0.3s;
+
+  &:hover {
+    background-color: #0073e6;
+    color: #fff;
+    border-color: #005bb5;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background-color: #005bb5;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.5);
+  }
+}
